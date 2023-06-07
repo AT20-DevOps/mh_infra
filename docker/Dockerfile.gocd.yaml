@@ -18,4 +18,4 @@ RUN apt-get -y update && \
     unzip -o /godata/.sonar/sonar-scanner.zip -d /godata/.sonar/ && \
     export PATH=$SONAR_SCANNER_HOME/bin:$PATH && \
     export SONAR_SCANNER_OPTS="-server"
-User go
+USER go
